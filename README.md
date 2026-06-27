@@ -4,15 +4,11 @@
 
 ## Overview
 
-**maverick-oss** is a fully open-source, reference-free multi-agent system for generating and refining image descriptions with Vision-Language Models (VLMs). It is a reduced and transparent version of a larger research framework, **MAVERICK: Multi-Agent Validation for Explainable Visual Reasoning and Image Consistency Knowledge**, developed as part of a Master's Thesis in Artificial Intelligence by **Eduardo J. Barrios**.
+**maverick-oss** is the open-source, reference-free release of the broader **MAVERICK: Multi-Agent Validation for Explainable Visual Reasoning and Image Consistency Knowledge** research framework, developed as part of a Master's Thesis in Artificial Intelligence by **Eduardo J. Barrios**.
 
 This repository is designed as a general-purpose research system. It is not limited to any specific application domain and can be adapted to contexts where visual description, interpretability, and iterative reasoning are relevant.
 
-maverick-oss includes only the reference-free pipeline. It does not include reference-based validation, comparison against ground-truth descriptions, or proprietary and unpublished evaluation metrics.
-
 ## Cognitive Inspiration
-
-maverick-oss is a general-purpose multi-agent pipeline inspired by human visual reasoning. The system follows a cognitive-inspired workflow in which an image is first examined for salient entities, then described, critically reviewed, and refined.
 
 MAVERICK is inspired by human visual analysis. A person usually begins by identifying the objects, regions, and visual cues present in an image; then they describe what they see using prior knowledge and domain expertise. When there are doubts, ambiguities, or possible inconsistencies, the description is re-examined critically and refined into a more coherent final interpretation. This design is aligned with cognitive research on high-level scene perception, where object identification, scene interpretation, eye movements, and ongoing cognitive processing interact during visual understanding ([Henderson & Hollingworth, 1999](https://doi.org/10.1146/annurev.psych.50.1.243)). maverick-oss operationalizes this process through specialized agents: A1 identifies visual elements, A2 describes them, A3 critiques the description, and A4 refines the final output.
 
@@ -154,9 +150,7 @@ python -m pip install -r requirements.txt
 
 ## Open Source Philosophy
 
-This is a simplified version designed to remain fully open-source.
-
-maverick-oss is intended to support transparent and reproducible research. The repository favors clear implementation, explicit configuration, readable prompts, and incremental commits. The project is intentionally minimal so that researchers and developers can inspect, extend, and adapt the system without relying on hidden components.
+maverick-oss is a simplified version designed to remain fully open-source. It is intended to support transparent and reproducible research through clear implementation, explicit configuration, readable prompts, and incremental commits.
 
 The public repository excludes unpublished research contributions from the full MAVERICK framework in order to protect ongoing academic work while still providing a useful open-source foundation for multi-agent VLM research.
 
@@ -187,8 +181,4 @@ If you use maverick-oss in academic or applied work, please cite the repository 
 
 ## Disclaimer
 
-maverick-oss is a reduced open-source version of the broader MAVERICK research framework. It includes only the reference-free pipeline for image description generation and refinement.
-
-The full MAVERICK system includes additional components for reference-based validation and unpublished evaluation metrics. Those components are part of ongoing research, have not been published, and are not included in this repository.
-
-This repository is provided for research and educational purposes. Users are responsible for validating outputs before applying the system in high-stakes or domain-specific settings.
+maverick-oss is provided for research and educational purposes. It should not be treated as the full MAVERICK research framework, and users are responsible for validating outputs before applying the system in high-stakes or domain-specific settings.
