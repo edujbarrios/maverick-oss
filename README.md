@@ -156,12 +156,6 @@ This project is licensed under the **Mozilla Public License 2.0 (MPL-2.0)**.
 
 Attribution to **Eduardo J. Barrios** is required in derivative works, publications, and redistributed versions of this project. See `LICENSE` for the license notice and terms.
 
-## Author
-
-**Eduardo J. Barrios**  
-Master's Thesis in Artificial Intelligence  
-Project: maverick-oss
-
 ## Citation
 
 If you use maverick-oss in academic or applied work, please cite the repository using the metadata in `CITATION.cff`.
