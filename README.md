@@ -44,9 +44,9 @@ Each agent is modular and can be configured independently with its own model, AP
 
 This repository supports **reference-free execution only**.
 
-MAVERICK-OSS does not compare generated descriptions against reference descriptions. It does not contain reference-based validation modules. It does not contain unpublished evaluation metrics from the full MAVERICK research framework, including metrics such as MSCE.
+The original MAVERICK research framework implemented external text-to-text validation, where generated descriptions could be compared against reference descriptions using novel evaluation metrics. In MAVERICK-OSS, only the reference-free model has been open-sourced.
 
-These exclusions are intentional. Reference-based validation and unpublished evaluation metrics remain part of ongoing research and are not included in this public repository.
+Accordingly, MAVERICK-OSS does not compare generated descriptions against reference descriptions. It does not contain reference-based validation modules, external text-to-text validation components, or unpublished evaluation metrics from the full MAVERICK research framework, including metrics such as MSCE. These exclusions are intentional because those components remain part of ongoing research and are not included in this public repository.
 
 ## API Requirements
 
