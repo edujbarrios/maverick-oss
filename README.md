@@ -4,7 +4,7 @@
 
 **MAVERICK-OSS** is a fully open-source, reference-free multi-agent system for generating and refining image descriptions with Vision-Language Models (VLMs). It is a reduced and transparent version of a larger research framework, **MAVERICK: Multi-Agent Validation for Explainable Visual Reasoning and Image Consistency Knowledge**, developed as part of a Master's Thesis in Artificial Intelligence by **Eduardo J. Barrios**.
 
-This repository is designed as a general-purpose research system. It is not limited to medical imaging and may be adapted to other domains where visual description, interpretability, and iterative reasoning are relevant.
+This repository is designed as a general-purpose research system. It is not limited to any specific domain and may be adapted to other domains where visual description, interpretability, and iterative reasoning are relevant.
 
 MAVERICK-OSS includes only the reference-free pipeline. It does not include reference-based validation, comparison against ground-truth descriptions, or proprietary and unpublished evaluation metrics.
 
@@ -26,6 +26,10 @@ This design is intended to support transparent reasoning, modular experimentatio
 ## Architecture
 
 MAVERICK-OSS contains exactly four configurable agents:
+
+![MAVERICK-OSS reference-free multi-agent pipeline](docs/assets/maverick-oss-pipeline.svg)
+
+**Figure 1.** MAVERICK-OSS implements a sequential reference-free workflow in which A1 identifies visual elements, A2 generates an initial description, A3 critiques the description, and A4 refines the final output.
 
 | Agent | Name | Role |
 | --- | --- | --- |
