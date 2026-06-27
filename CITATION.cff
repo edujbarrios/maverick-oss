@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use MAVERICK-OSS, please cite this software."
+title: "MAVERICK-OSS"
+type: software
+authors:
+  - family-names: "Barrios"
+    given-names: "Eduardo J."
+year: 2026
+license: "MPL-2.0"
+keywords:
+  - "multi-agent systems"
+  - "vision-language models"
+  - "explainable AI"
+abstract: "MAVERICK-OSS is a reference-free multi-agent pipeline for generating and refining image descriptions with Vision-Language Models."

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maverick-oss"
+version = "0.1.0"
+description = "Reference-free multi-agent image description pipeline using Vision-Language Models."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MPL-2.0" }
+authors = [
+    { name = "Eduardo J. Barrios" }
+]
+keywords = ["multi-agent systems", "vision-language models", "explainable AI"]
+dependencies = [
+    "openai>=1.0.0",
+    "streamlit>=1.32.0",
+    "pillow>=10.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
