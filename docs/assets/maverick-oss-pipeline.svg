@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="430" viewBox="0 0 1400 430" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
   <title id="title">maverick-oss reference-free multi-agent pipeline</title>
-  <desc id="desc">A readable paper-style diagram of the maverick-oss reference-free workflow with four agents: A1 Identifier, A2 Descriptor, A3 Critic, and A4 Refiner.</desc>
+  <desc id="desc">A paper-style diagram of the maverick-oss reference-free workflow with four agents: A1 Identifier, A2 Descriptor, A3 Critic, and A4 Refiner.</desc>
   <defs>
     <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
-      <path d="M2,2 L12,7 L2,12 Z" fill="#23324d"/>
+      <path d="M2,2 L12,7 L2,12 Z" fill="#24344f"/>
     </marker>
     <filter id="shadow" x="-8%" y="-8%" width="116%" height="124%">
-      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#18315d" flood-opacity="0.14"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#17345f" flood-opacity="0.12"/>
     </filter>
     <style>
       .bg { fill: #f8fbff; }
@@ -16,97 +16,97 @@
       .badge { fill: #376bd6; }
       .badge-text { fill: #ffffff; font: 700 22px Arial, Helvetica, sans-serif; text-anchor: middle; dominant-baseline: central; }
       .agent { fill: #123f96; font: 700 20px Arial, Helvetica, sans-serif; }
-      .role { fill: #1f2f46; font: 700 17px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .role { fill: #1f2f46; font: 700 18px Arial, Helvetica, sans-serif; text-anchor: middle; }
       .body { fill: #2b3b55; font: 15px Arial, Helvetica, sans-serif; text-anchor: middle; }
-      .icon { fill: none; stroke: #2454b8; stroke-width: 6.5; stroke-linecap: round; stroke-linejoin: round; }
-      .icon-fill { fill: #edf4ff; stroke: #2454b8; stroke-width: 5.5; }
-      .arrow { stroke: #23324d; stroke-width: 5; fill: none; marker-end: url(#arrow); }
+      .icon { fill: none; stroke: #2454b8; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .icon-fill { fill: #edf4ff; stroke: #2454b8; stroke-width: 5; }
+      .arrow { stroke: #24344f; stroke-width: 5; fill: none; marker-end: url(#arrow); }
       .bracket { stroke: #376bd6; stroke-width: 4; fill: none; stroke-linecap: round; }
-      .output { fill: #154aa8; font: 700 20px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .output { fill: #154aa8; font: 700 21px Arial, Helvetica, sans-serif; text-anchor: middle; }
       .excluded { fill: #fffdf6; stroke: #c6a24a; stroke-width: 2.5; stroke-dasharray: 9 7; }
       .excluded-text { fill: #6b5617; font: 15px Arial, Helvetica, sans-serif; text-anchor: middle; }
       .caption { fill: #52627a; font: 15px Arial, Helvetica, sans-serif; text-anchor: middle; }
     </style>
   </defs>
 
-  <rect class="bg" width="1400" height="430"/>
-  <text class="title" x="700" y="48">maverick-oss Reference-Free Multi-Agent Pipeline</text>
-  <text class="subtitle" x="700" y="80">Sequential workflow inspired by human visual analysis</text>
+  <rect class="bg" width="1400" height="520"/>
+  <text class="title" x="700" y="52">maverick-oss Reference-Free Multi-Agent Pipeline</text>
+  <text class="subtitle" x="700" y="86">Sequential workflow inspired by human visual analysis</text>
 
-  <g transform="translate(70 115)">
-    <rect class="card" x="0" y="0" width="250" height="185" rx="18"/>
+  <g transform="translate(70 125)">
+    <rect class="card" x="0" y="0" width="250" height="235" rx="18"/>
     <circle class="badge" cx="34" cy="35" r="20"/>
     <text class="badge-text" x="34" y="35">1</text>
     <text class="agent" x="72" y="41">A1 - Identifier</text>
-    <g transform="translate(92 62)">
-      <rect class="icon-fill" x="16" y="8" width="70" height="64" rx="17"/>
-      <path class="icon" d="M34 34 h14 M63 34 h14 M51 19 v-8 M51 72 v8 M24 47 h-8 M86 47 h8"/>
-      <path class="icon" d="M31 25 v-8 h13 M70 25 v-8 h-13 M31 65 v8 h13 M70 65 v8 h-13"/>
+    <g transform="translate(91 75)">
+      <rect class="icon-fill" x="18" y="8" width="72" height="72" rx="18"/>
+      <path class="icon" d="M37 36 h15 M67 36 h15 M54 21 v-9 M54 80 v9 M27 51 h-9 M90 51 h9"/>
+      <path class="icon" d="M34 27 v-9 h14 M74 27 v-9 h-14 M34 74 v9 h14 M74 74 v9 h-14"/>
     </g>
-    <text class="role" x="125" y="150">Identify visual evidence</text>
-    <text class="body" x="125" y="171">objects, regions, cues</text>
+    <text class="role" x="125" y="188">Identify visual evidence</text>
+    <text class="body" x="125" y="212">objects, regions, cues</text>
   </g>
 
-  <path class="arrow" d="M340 208 H407"/>
+  <path class="arrow" d="M340 243 H407"/>
 
-  <g transform="translate(430 115)">
-    <rect class="card" x="0" y="0" width="250" height="185" rx="18"/>
+  <g transform="translate(430 125)">
+    <rect class="card" x="0" y="0" width="250" height="235" rx="18"/>
     <circle class="badge" cx="34" cy="35" r="20"/>
     <text class="badge-text" x="34" y="35">2</text>
     <text class="agent" x="72" y="41">A2 - Descriptor</text>
-    <g transform="translate(96 62)">
-      <path class="icon-fill" d="M22 6 H76 L100 30 V86 H22 Z"/>
-      <path class="icon" d="M76 6 V30 H100"/>
-      <path class="icon" d="M42 43 H80 M42 58 H80 M42 73 H80"/>
+    <g transform="translate(92 75)">
+      <path class="icon-fill" d="M24 6 H78 L104 32 V96 H24 Z"/>
+      <path class="icon" d="M78 6 V32 H104"/>
+      <path class="icon" d="M45 48 H82 M45 65 H82 M45 82 H82"/>
     </g>
-    <text class="role" x="125" y="150">Generate description</text>
-    <text class="body" x="125" y="171">structured initial output</text>
+    <text class="role" x="125" y="188">Generate description</text>
+    <text class="body" x="125" y="212">structured initial output</text>
   </g>
 
-  <path class="arrow" d="M700 208 H767"/>
+  <path class="arrow" d="M700 243 H767"/>
 
-  <g transform="translate(790 115)">
-    <rect class="card" x="0" y="0" width="250" height="185" rx="18"/>
+  <g transform="translate(790 125)">
+    <rect class="card" x="0" y="0" width="250" height="235" rx="18"/>
     <circle class="badge" cx="34" cy="35" r="20"/>
     <text class="badge-text" x="34" y="35">3</text>
     <text class="agent" x="72" y="41">A3 - Critic</text>
-    <g transform="translate(82 57)">
-      <path class="icon" d="M58 12 L108 98 H8 Z"/>
-      <path class="icon" d="M58 43 V67"/>
-      <circle class="icon-fill" cx="58" cy="82" r="3"/>
-      <circle class="icon-fill" cx="101" cy="84" r="24"/>
-      <path class="icon" d="M118 101 L137 120"/>
+    <g transform="translate(82 72)">
+      <path class="icon" d="M58 12 L108 102 H8 Z"/>
+      <path class="icon" d="M58 45 V70"/>
+      <circle class="icon-fill" cx="58" cy="86" r="3"/>
+      <circle class="icon-fill" cx="104" cy="88" r="25"/>
+      <path class="icon" d="M122 106 L142 126"/>
     </g>
-    <text class="role" x="125" y="150">Critique description</text>
-    <text class="body" x="125" y="171">ambiguity, omissions, claims</text>
+    <text class="role" x="125" y="188">Critique description</text>
+    <text class="body" x="125" y="212">ambiguity, omissions, claims</text>
   </g>
 
-  <path class="arrow" d="M1060 208 H1127"/>
+  <path class="arrow" d="M1060 243 H1127"/>
 
-  <g transform="translate(1150 115)">
-    <rect class="card" x="0" y="0" width="250" height="185" rx="18"/>
+  <g transform="translate(1150 125)">
+    <rect class="card" x="0" y="0" width="250" height="235" rx="18"/>
     <circle class="badge" cx="34" cy="35" r="20"/>
     <text class="badge-text" x="34" y="35">4</text>
     <text class="agent" x="72" y="41">A4 - Refiner</text>
-    <g transform="translate(92 60)">
-      <path class="icon-fill" d="M24 88 H90 V26 L77 13 H24 Z"/>
-      <path class="icon" d="M77 13 V27 H90"/>
-      <path class="icon" d="M55 69 L97 27"/>
-      <path class="icon" d="M91 21 L105 35"/>
-      <path class="icon" d="M49 76 L45 91 L61 87"/>
+    <g transform="translate(91 75)">
+      <path class="icon-fill" d="M25 94 H95 V27 L80 12 H25 Z"/>
+      <path class="icon" d="M80 12 V28 H95"/>
+      <path class="icon" d="M58 74 L103 29"/>
+      <path class="icon" d="M96 22 L111 37"/>
+      <path class="icon" d="M52 82 L48 98 L65 94"/>
     </g>
-    <text class="role" x="125" y="150">Refine final output</text>
-    <text class="body" x="125" y="171">corrected image description</text>
+    <text class="role" x="125" y="188">Refine final output</text>
+    <text class="body" x="125" y="212">corrected description</text>
   </g>
 
-  <path class="bracket" d="M70 322 v14 q0 18 18 18 h1008 q18 0 18-18 v-14"/>
-  <text class="output" x="592" y="382">Final output: reference-free image description</text>
+  <path class="bracket" d="M70 392 v14 q0 18 18 18 h820 q18 0 18-18 v-14"/>
+  <text class="output" x="500" y="457">Final output: reference-free image description</text>
 
-  <g transform="translate(990 322)">
-    <rect class="excluded" x="0" y="0" width="330" height="64" rx="14"/>
-    <text class="excluded-text" x="165" y="26">Excluded from maverick-oss:</text>
-    <text class="excluded-text" x="165" y="47">reference validation and unpublished metrics</text>
+  <g transform="translate(1010 390)">
+    <rect class="excluded" x="0" y="0" width="330" height="70" rx="14"/>
+    <text class="excluded-text" x="165" y="29">Excluded from maverick-oss:</text>
+    <text class="excluded-text" x="165" y="51">reference validation and unpublished metrics</text>
   </g>
 
-  <text class="caption" x="700" y="415">Figure 1. Identification, description, critique, and refinement in the open-source reference-free pipeline.</text>
+  <text class="caption" x="700" y="500">Figure 1. Identification, description, critique, and refinement in the open-source reference-free pipeline.</text>
 </svg>
