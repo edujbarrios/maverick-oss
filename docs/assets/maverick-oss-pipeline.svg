@@ -1,122 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="430" viewBox="0 0 1400 430" role="img" aria-labelledby="title desc">
   <title id="title">maverick-oss reference-free multi-agent pipeline</title>
-  <desc id="desc">A paper-style diagram showing the sequential maverick-oss workflow with four agents: A1 Identifier, A2 Descriptor, A3 Critic, and A4 Refiner.</desc>
+  <desc id="desc">A readable paper-style diagram of the maverick-oss reference-free workflow with four agents: A1 Identifier, A2 Descriptor, A3 Critic, and A4 Refiner.</desc>
   <defs>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M2,2 L10,6 L2,10 Z" fill="#23324d"/>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L12,7 L2,12 Z" fill="#23324d"/>
     </marker>
-    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
-      <path d="M2,2 L10,6 L2,10 Z" fill="#2d67d3"/>
-    </marker>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#1d3158" flood-opacity="0.12"/>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="124%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#18315d" flood-opacity="0.14"/>
     </filter>
     <style>
-      .background { fill: #f8fbff; }
-      .title { fill: #253858; font: 700 30px Arial, Helvetica, sans-serif; }
-      .subtitle { fill: #52627a; font: italic 20px Arial, Helvetica, sans-serif; }
-      .card { fill: #ffffff; stroke: #78a6ff; stroke-width: 2.5; filter: url(#shadow); }
-      .agent-badge { fill: #2d67d3; }
-      .badge-text { fill: #ffffff; font: 700 19px Arial, Helvetica, sans-serif; text-anchor: middle; dominant-baseline: central; }
-      .agent-title { fill: #173b8f; font: 700 17px Arial, Helvetica, sans-serif; }
-      .agent-role { fill: #24344f; font: 700 16px Arial, Helvetica, sans-serif; }
-      .agent-desc { fill: #26364f; font: 14px Arial, Helvetica, sans-serif; text-anchor: middle; }
-      .icon { fill: none; stroke: #1d4fb8; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
-      .icon-fill { fill: #eaf2ff; stroke: #1d4fb8; stroke-width: 5; }
-      .arrow { stroke: #23324d; stroke-width: 4; fill: none; marker-end: url(#arrow); }
-      .bracket { stroke: #2d67d3; stroke-width: 3; fill: none; stroke-linecap: round; }
-      .output-title { fill: #174ea6; font: 700 18px Arial, Helvetica, sans-serif; text-anchor: middle; }
-      .output-box { fill: #ffffff; stroke: #2d67d3; stroke-width: 2.5; }
-      .output-icon { fill: none; stroke: #2d67d3; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; }
-      .excluded { fill: #fffefa; stroke: #c7a64c; stroke-width: 2.2; stroke-dasharray: 8 6; }
-      .excluded-text { fill: #6b5617; font: 14px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .bg { fill: #f8fbff; }
+      .title { fill: #17345f; font: 700 34px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .subtitle { fill: #52627a; font: italic 21px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .card { fill: #ffffff; stroke: #7aa7ff; stroke-width: 3; filter: url(#shadow); }
+      .badge { fill: #376bd6; }
+      .badge-text { fill: #ffffff; font: 700 22px Arial, Helvetica, sans-serif; text-anchor: middle; dominant-baseline: central; }
+      .agent { fill: #123f96; font: 700 20px Arial, Helvetica, sans-serif; }
+      .role { fill: #1f2f46; font: 700 17px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .body { fill: #2b3b55; font: 15px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .icon { fill: none; stroke: #2454b8; stroke-width: 6.5; stroke-linecap: round; stroke-linejoin: round; }
+      .icon-fill { fill: #edf4ff; stroke: #2454b8; stroke-width: 5.5; }
+      .arrow { stroke: #23324d; stroke-width: 5; fill: none; marker-end: url(#arrow); }
+      .bracket { stroke: #376bd6; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .output { fill: #154aa8; font: 700 20px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .excluded { fill: #fffdf6; stroke: #c6a24a; stroke-width: 2.5; stroke-dasharray: 9 7; }
+      .excluded-text { fill: #6b5617; font: 15px Arial, Helvetica, sans-serif; text-anchor: middle; }
       .caption { fill: #52627a; font: 15px Arial, Helvetica, sans-serif; text-anchor: middle; }
     </style>
   </defs>
 
-  <rect class="background" width="1200" height="520"/>
-  <text class="title" x="600" y="48" text-anchor="middle">maverick-oss Reference-Free Multi-Agent Pipeline</text>
-  <text class="subtitle" x="600" y="80" text-anchor="middle">Sequential workflow inspired by human visual analysis</text>
+  <rect class="bg" width="1400" height="430"/>
+  <text class="title" x="700" y="48">maverick-oss Reference-Free Multi-Agent Pipeline</text>
+  <text class="subtitle" x="700" y="80">Sequential workflow inspired by human visual analysis</text>
 
-  <g transform="translate(55 125)">
-    <rect class="card" x="0" y="0" width="220" height="235" rx="18"/>
-    <circle class="agent-badge" cx="29" cy="30" r="18"/>
-    <text class="badge-text" x="29" y="30">1</text>
-    <text class="agent-title" x="58" y="34">A1 - Identifier</text>
-    <g transform="translate(73 64)">
-      <rect class="icon-fill" x="20" y="10" width="72" height="72" rx="18"/>
-      <path class="icon" d="M40 45 h18 M73 45 h18 M56 27 v-10 M56 83 v10 M32 58 h-10 M90 58 h10"/>
-      <path class="icon" d="M35 35 v-10 h14 M77 35 v-10 h-14 M35 77 v10 h14 M77 77 v10 h-14"/>
+  <g transform="translate(70 115)">
+    <rect class="card" x="0" y="0" width="250" height="185" rx="18"/>
+    <circle class="badge" cx="34" cy="35" r="20"/>
+    <text class="badge-text" x="34" y="35">1</text>
+    <text class="agent" x="72" y="41">A1 - Identifier</text>
+    <g transform="translate(92 62)">
+      <rect class="icon-fill" x="16" y="8" width="70" height="64" rx="17"/>
+      <path class="icon" d="M34 34 h14 M63 34 h14 M51 19 v-8 M51 72 v8 M24 47 h-8 M86 47 h8"/>
+      <path class="icon" d="M31 25 v-8 h13 M70 25 v-8 h-13 M31 65 v8 h13 M70 65 v8 h-13"/>
     </g>
-    <text class="agent-desc" x="110" y="178">Detects salient objects,</text>
-    <text class="agent-desc" x="110" y="198">regions, cues, and uncertainty.</text>
+    <text class="role" x="125" y="150">Identify visual evidence</text>
+    <text class="body" x="125" y="171">objects, regions, cues</text>
   </g>
 
-  <path class="arrow" d="M290 242 H344"/>
+  <path class="arrow" d="M340 208 H407"/>
 
-  <g transform="translate(360 125)">
-    <rect class="card" x="0" y="0" width="220" height="235" rx="18"/>
-    <circle class="agent-badge" cx="29" cy="30" r="18"/>
-    <text class="badge-text" x="29" y="30">2</text>
-    <text class="agent-title" x="58" y="34">A2 - Descriptor</text>
-    <g transform="translate(75 66)">
-      <path class="icon-fill" d="M30 5 H82 L105 28 V100 H30 Z"/>
-      <path class="icon" d="M82 5 V30 H105"/>
-      <path class="icon" d="M48 43 H88 M48 60 H88 M48 77 H88"/>
+  <g transform="translate(430 115)">
+    <rect class="card" x="0" y="0" width="250" height="185" rx="18"/>
+    <circle class="badge" cx="34" cy="35" r="20"/>
+    <text class="badge-text" x="34" y="35">2</text>
+    <text class="agent" x="72" y="41">A2 - Descriptor</text>
+    <g transform="translate(96 62)">
+      <path class="icon-fill" d="M22 6 H76 L100 30 V86 H22 Z"/>
+      <path class="icon" d="M76 6 V30 H100"/>
+      <path class="icon" d="M42 43 H80 M42 58 H80 M42 73 H80"/>
     </g>
-    <text class="agent-desc" x="110" y="178">Generates an initial</text>
-    <text class="agent-desc" x="110" y="198">structured description.</text>
+    <text class="role" x="125" y="150">Generate description</text>
+    <text class="body" x="125" y="171">structured initial output</text>
   </g>
 
-  <path class="arrow" d="M595 242 H649"/>
+  <path class="arrow" d="M700 208 H767"/>
 
-  <g transform="translate(665 125)">
-    <rect class="card" x="0" y="0" width="220" height="235" rx="18"/>
-    <circle class="agent-badge" cx="29" cy="30" r="18"/>
-    <text class="badge-text" x="29" y="30">3</text>
-    <text class="agent-title" x="58" y="34">A3 - Critic</text>
-    <g transform="translate(70 62)">
-      <path class="icon" d="M62 14 L116 108 H8 Z"/>
-      <path class="icon" d="M62 48 V76"/>
-      <circle class="icon-fill" cx="62" cy="91" r="3"/>
-      <circle class="icon-fill" cx="103" cy="92" r="28"/>
-      <path class="icon" d="M123 112 L144 133"/>
+  <g transform="translate(790 115)">
+    <rect class="card" x="0" y="0" width="250" height="185" rx="18"/>
+    <circle class="badge" cx="34" cy="35" r="20"/>
+    <text class="badge-text" x="34" y="35">3</text>
+    <text class="agent" x="72" y="41">A3 - Critic</text>
+    <g transform="translate(82 57)">
+      <path class="icon" d="M58 12 L108 98 H8 Z"/>
+      <path class="icon" d="M58 43 V67"/>
+      <circle class="icon-fill" cx="58" cy="82" r="3"/>
+      <circle class="icon-fill" cx="101" cy="84" r="24"/>
+      <path class="icon" d="M118 101 L137 120"/>
     </g>
-    <text class="agent-desc" x="110" y="178">Flags ambiguities, omissions,</text>
-    <text class="agent-desc" x="110" y="198">and unsupported claims.</text>
+    <text class="role" x="125" y="150">Critique description</text>
+    <text class="body" x="125" y="171">ambiguity, omissions, claims</text>
   </g>
 
-  <path class="arrow" d="M900 242 H954"/>
+  <path class="arrow" d="M1060 208 H1127"/>
 
-  <g transform="translate(970 125)">
-    <rect class="card" x="0" y="0" width="220" height="235" rx="18"/>
-    <circle class="agent-badge" cx="29" cy="30" r="18"/>
-    <text class="badge-text" x="29" y="30">4</text>
-    <text class="agent-title" x="58" y="34">A4 - Refiner</text>
-    <g transform="translate(73 64)">
-      <path class="icon-fill" d="M22 95 H92 V32 L78 18 H22 Z"/>
-      <path class="icon" d="M78 18 V33 H92"/>
-      <path class="icon" d="M57 75 L102 30"/>
-      <path class="icon" d="M95 23 L109 37"/>
-      <path class="icon" d="M51 82 L47 98 L63 94"/>
+  <g transform="translate(1150 115)">
+    <rect class="card" x="0" y="0" width="250" height="185" rx="18"/>
+    <circle class="badge" cx="34" cy="35" r="20"/>
+    <text class="badge-text" x="34" y="35">4</text>
+    <text class="agent" x="72" y="41">A4 - Refiner</text>
+    <g transform="translate(92 60)">
+      <path class="icon-fill" d="M24 88 H90 V26 L77 13 H24 Z"/>
+      <path class="icon" d="M77 13 V27 H90"/>
+      <path class="icon" d="M55 69 L97 27"/>
+      <path class="icon" d="M91 21 L105 35"/>
+      <path class="icon" d="M49 76 L45 91 L61 87"/>
     </g>
-    <text class="agent-desc" x="110" y="178">Integrates critique and</text>
-    <text class="agent-desc" x="110" y="198">produces the final output.</text>
+    <text class="role" x="125" y="150">Refine final output</text>
+    <text class="body" x="125" y="171">corrected image description</text>
   </g>
 
-  <path class="bracket" d="M55 386 v16 q0 18 18 18 h1044 q18 0 18-18 v-16"/>
-  <g transform="translate(515 384)">
-    <rect class="output-box" x="0" y="0" width="170" height="58" rx="12"/>
-    <path class="output-icon" d="M48 13 v31 M32 29 h32"/>
-    <path class="output-icon" d="M88 15 l17 17 l34 -34" transform="translate(0 16)"/>
-  </g>
-  <text class="output-title" x="600" y="474">Final output: reference-free image description</text>
+  <path class="bracket" d="M70 322 v14 q0 18 18 18 h1008 q18 0 18-18 v-14"/>
+  <text class="output" x="592" y="382">Final output: reference-free image description</text>
 
-  <g transform="translate(825 386)">
-    <rect class="excluded" x="0" y="0" width="310" height="72" rx="14"/>
-    <text class="excluded-text" x="155" y="28">Excluded from maverick-oss:</text>
-    <text class="excluded-text" x="155" y="50">reference-based validation and unpublished metrics</text>
+  <g transform="translate(990 322)">
+    <rect class="excluded" x="0" y="0" width="330" height="64" rx="14"/>
+    <text class="excluded-text" x="165" y="26">Excluded from maverick-oss:</text>
+    <text class="excluded-text" x="165" y="47">reference validation and unpublished metrics</text>
   </g>
 
-  <text class="caption" x="600" y="506">Figure 1. maverick-oss implements identification, description, critique, and refinement as a transparent reference-free workflow.</text>
+  <text class="caption" x="700" y="415">Figure 1. Identification, description, critique, and refinement in the open-source reference-free pipeline.</text>
 </svg>

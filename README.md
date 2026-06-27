@@ -1,5 +1,7 @@
 # maverick-oss
 
+**Multi-Agent Validation for Explainable Visual Reasoning and Image Consistency Knowledge**
+
 ## Overview
 
 **maverick-oss** is a fully open-source, reference-free multi-agent system for generating and refining image descriptions with Vision-Language Models (VLMs). It is a reduced and transparent version of a larger research framework, **MAVERICK: Multi-Agent Validation for Explainable Visual Reasoning and Image Consistency Knowledge**, developed as part of a Master's Thesis in Artificial Intelligence by **Eduardo J. Barrios**.
