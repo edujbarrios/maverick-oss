@@ -13,7 +13,7 @@ from maverick_oss.prompts import (
 
 
 class MaverickPipeline:
-    """Reference-free MAVERICK-OSS pipeline with four cognitive-inspired agents."""
+    """Reference-free maverick-oss pipeline with four cognitive-inspired agents."""
 
     def __init__(self, config: dict[str, AgentConfig]) -> None:
         required_agents = {"A1", "A2", "A3", "A4"}

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">MAVERICK-OSS reference-free multi-agent pipeline</title>
-  <desc id="desc">A paper-style diagram showing the sequential MAVERICK-OSS workflow with four agents: A1 Identifier, A2 Descriptor, A3 Critic, and A4 Refiner.</desc>
+  <title id="title">maverick-oss reference-free multi-agent pipeline</title>
+  <desc id="desc">A paper-style diagram showing the sequential maverick-oss workflow with four agents: A1 Identifier, A2 Descriptor, A3 Critic, and A4 Refiner.</desc>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
       <path d="M2,2 L10,6 L2,10 Z" fill="#23324d"/>
@@ -35,7 +35,7 @@
   </defs>
 
   <rect class="background" width="1200" height="520"/>
-  <text class="title" x="600" y="48" text-anchor="middle">MAVERICK-OSS Reference-Free Multi-Agent Pipeline</text>
+  <text class="title" x="600" y="48" text-anchor="middle">maverick-oss Reference-Free Multi-Agent Pipeline</text>
   <text class="subtitle" x="600" y="80" text-anchor="middle">Sequential workflow inspired by human visual analysis</text>
 
   <g transform="translate(55 125)">
@@ -114,9 +114,9 @@
 
   <g transform="translate(825 386)">
     <rect class="excluded" x="0" y="0" width="310" height="72" rx="14"/>
-    <text class="excluded-text" x="155" y="28">Excluded from MAVERICK-OSS:</text>
+    <text class="excluded-text" x="155" y="28">Excluded from maverick-oss:</text>
     <text class="excluded-text" x="155" y="50">reference-based validation and unpublished metrics</text>
   </g>
 
-  <text class="caption" x="600" y="506">Figure 1. MAVERICK-OSS implements identification, description, critique, and refinement as a transparent reference-free workflow.</text>
+  <text class="caption" x="600" y="506">Figure 1. maverick-oss implements identification, description, critique, and refinement as a transparent reference-free workflow.</text>
 </svg>

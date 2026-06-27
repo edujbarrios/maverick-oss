@@ -1,4 +1,4 @@
-"""MAVERICK-OSS reference-free multi-agent image description pipeline."""
+"""maverick-oss reference-free multi-agent image description pipeline."""
 
 __all__ = ["MaverickPipeline"]
 

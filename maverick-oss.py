@@ -13,8 +13,8 @@ from maverick_oss.pipeline import MaverickPipeline
 load_dotenv()
 
 
-st.set_page_config(page_title="MAVERICK-OSS", page_icon="M", layout="wide")
-st.title("MAVERICK-OSS")
+st.set_page_config(page_title="maverick-oss", page_icon="M", layout="wide")
+st.title("maverick-oss")
 st.caption("Reference-free multi-agent image description with Vision-Language Models.")
 
 with st.sidebar:
@@ -37,7 +37,7 @@ if uploaded_file:
             config = build_agent_config(api_key=api_key, base_url=base_url, model=model)
             pipeline = MaverickPipeline(config)
 
-            with st.spinner("Running MAVERICK-OSS agents..."):
+            with st.spinner("Running maverick-oss agents..."):
                 result = pipeline.run(image)
 
             st.subheader("Agent Outputs")

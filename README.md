@@ -1,18 +1,18 @@
-# MAVERICK-OSS
+# maverick-oss
 
 ## Overview
 
-**MAVERICK-OSS** is a fully open-source, reference-free multi-agent system for generating and refining image descriptions with Vision-Language Models (VLMs). It is a reduced and transparent version of a larger research framework, **MAVERICK: Multi-Agent Validation for Explainable Visual Reasoning and Image Consistency Knowledge**, developed as part of a Master's Thesis in Artificial Intelligence by **Eduardo J. Barrios**.
+**maverick-oss** is a fully open-source, reference-free multi-agent system for generating and refining image descriptions with Vision-Language Models (VLMs). It is a reduced and transparent version of a larger research framework, **MAVERICK: Multi-Agent Validation for Explainable Visual Reasoning and Image Consistency Knowledge**, developed as part of a Master's Thesis in Artificial Intelligence by **Eduardo J. Barrios**.
 
 This repository is designed as a general-purpose research system. It is not limited to any specific application domain and can be adapted to contexts where visual description, interpretability, and iterative reasoning are relevant.
 
-MAVERICK-OSS includes only the reference-free pipeline. It does not include reference-based validation, comparison against ground-truth descriptions, or proprietary and unpublished evaluation metrics.
+maverick-oss includes only the reference-free pipeline. It does not include reference-based validation, comparison against ground-truth descriptions, or proprietary and unpublished evaluation metrics.
 
 ## Cognitive Inspiration
 
-MAVERICK-OSS is a general-purpose multi-agent pipeline inspired by human visual reasoning. The system follows a cognitive-inspired workflow in which an image is first examined for salient entities, then described, critically reviewed, and refined.
+maverick-oss is a general-purpose multi-agent pipeline inspired by human visual reasoning. The system follows a cognitive-inspired workflow in which an image is first examined for salient entities, then described, critically reviewed, and refined.
 
-MAVERICK is inspired by human visual analysis. A person usually begins by identifying the objects, regions, and visual cues present in an image; then they describe what they see using prior knowledge and domain expertise. When there are doubts, ambiguities, or possible inconsistencies, the description is re-examined critically and refined into a more coherent final interpretation. This design is aligned with cognitive research on high-level scene perception, where object identification, scene interpretation, eye movements, and ongoing cognitive processing interact during visual understanding ([Henderson & Hollingworth, 1999](https://doi.org/10.1146/annurev.psych.50.1.243)). MAVERICK-OSS operationalizes this process through specialized agents: A1 identifies visual elements, A2 describes them, A3 critiques the description, and A4 refines the final output.
+MAVERICK is inspired by human visual analysis. A person usually begins by identifying the objects, regions, and visual cues present in an image; then they describe what they see using prior knowledge and domain expertise. When there are doubts, ambiguities, or possible inconsistencies, the description is re-examined critically and refined into a more coherent final interpretation. This design is aligned with cognitive research on high-level scene perception, where object identification, scene interpretation, eye movements, and ongoing cognitive processing interact during visual understanding ([Henderson & Hollingworth, 1999](https://doi.org/10.1146/annurev.psych.50.1.243)). maverick-oss operationalizes this process through specialized agents: A1 identifies visual elements, A2 describes them, A3 critiques the description, and A4 refines the final output.
 
 The pipeline is organized around four stages:
 
@@ -25,11 +25,11 @@ This design is intended to support transparent reasoning, modular experimentatio
 
 ## Architecture
 
-MAVERICK-OSS contains exactly four configurable agents:
+maverick-oss contains exactly four configurable agents:
 
-![MAVERICK-OSS reference-free multi-agent pipeline](docs/assets/maverick-oss-pipeline.svg)
+![maverick-oss reference-free multi-agent pipeline](docs/assets/maverick-oss-pipeline.svg)
 
-**Figure 1.** MAVERICK-OSS implements a sequential reference-free workflow in which A1 identifies visual elements, A2 generates an initial description, A3 critiques the description, and A4 refines the final output.
+**Figure 1.** maverick-oss implements a sequential reference-free workflow in which A1 identifies visual elements, A2 generates an initial description, A3 critiques the description, and A4 refines the final output.
 
 | Agent | Name | Role |
 | --- | --- | --- |
@@ -44,13 +44,13 @@ Each agent is modular and can be configured independently with its own model, AP
 
 This repository supports **reference-free execution only**.
 
-The original MAVERICK research framework implemented external text-to-text validation, where generated descriptions could be compared against reference descriptions using novel evaluation metrics. In MAVERICK-OSS, only the reference-free model has been open-sourced.
+The original MAVERICK research framework implemented external text-to-text validation, where generated descriptions could be compared against reference descriptions using novel evaluation metrics. In maverick-oss, only the reference-free model has been open-sourced.
 
-Accordingly, MAVERICK-OSS does not compare generated descriptions against reference descriptions. It does not contain reference-based validation modules, external text-to-text validation components, or unpublished evaluation metrics from the full MAVERICK research framework, including metrics such as MSCE. These exclusions are intentional because those components remain part of ongoing research and are not included in this public repository.
+Accordingly, maverick-oss does not compare generated descriptions against reference descriptions. It does not contain reference-based validation modules, external text-to-text validation components, or unpublished evaluation metrics from the full MAVERICK research framework, including metrics such as MSCE. These exclusions are intentional because those components remain part of ongoing research and are not included in this public repository.
 
 ## API Requirements
 
-MAVERICK-OSS uses an **OpenAI-compatible API** for VLM and language-model calls. Compatible providers may include:
+maverick-oss uses an **OpenAI-compatible API** for VLM and language-model calls. Compatible providers may include:
 
 - OpenAI
 - llm7.io
@@ -130,7 +130,7 @@ Prompt adaptation should preserve the reference-free constraint. Domain-specific
 
 ## Streamlit UI
 
-MAVERICK-OSS includes a minimal Streamlit interface for interactive use.
+maverick-oss includes a minimal Streamlit interface for interactive use.
 
 The interface supports:
 
@@ -154,7 +154,7 @@ python -m pip install -r requirements.txt
 
 This is a simplified version designed to remain fully open-source.
 
-MAVERICK-OSS is intended to support transparent and reproducible research. The repository favors clear implementation, explicit configuration, readable prompts, and incremental commits. The project is intentionally minimal so that researchers and developers can inspect, extend, and adapt the system without relying on hidden components.
+maverick-oss is intended to support transparent and reproducible research. The repository favors clear implementation, explicit configuration, readable prompts, and incremental commits. The project is intentionally minimal so that researchers and developers can inspect, extend, and adapt the system without relying on hidden components.
 
 The public repository excludes unpublished research contributions from the full MAVERICK framework in order to protect ongoing academic work while still providing a useful open-source foundation for multi-agent VLM research.
 
@@ -168,16 +168,16 @@ Attribution to **Eduardo J. Barrios** is required in derivative works, publicati
 
 **Eduardo J. Barrios**  
 Master's Thesis in Artificial Intelligence  
-Project: MAVERICK-OSS
+Project: maverick-oss
 
 ## Citation
 
-If you use MAVERICK-OSS in academic or applied work, please cite the repository using the metadata in `CITATION.cff`.
+If you use maverick-oss in academic or applied work, please cite the repository using the metadata in `CITATION.cff`.
 
 ```bibtex
 @software{barrios_maverick_oss_2026,
   author = {Barrios, Eduardo J.},
-  title = {MAVERICK-OSS: A Reference-Free Multi-Agent Pipeline for Image Description with Vision-Language Models},
+  title = {maverick-oss: A Reference-Free Multi-Agent Pipeline for Image Description with Vision-Language Models},
   year = {2026},
   license = {MPL-2.0}
 }
@@ -185,7 +185,7 @@ If you use MAVERICK-OSS in academic or applied work, please cite the repository 
 
 ## Disclaimer
 
-MAVERICK-OSS is a reduced open-source version of the broader MAVERICK research framework. It includes only the reference-free pipeline for image description generation and refinement.
+maverick-oss is a reduced open-source version of the broader MAVERICK research framework. It includes only the reference-free pipeline for image description generation and refinement.
 
 The full MAVERICK system includes additional components for reference-based validation and unpublished evaluation metrics. Those components are part of ongoing research, have not been published, and are not included in this repository.
 

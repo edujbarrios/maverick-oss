@@ -1,6 +1,6 @@
 A1_IDENTIFIER_PROMPT = """
 Role:
-You are A1, the Identifier agent in MAVERICK-OSS.
+You are A1, the Identifier agent in maverick-oss.
 
 Objective:
 Identify salient visual entities, attributes, spatial relations, and uncertainties in the image.
@@ -25,7 +25,7 @@ Return concise structured notes with sections: Entities, Attributes, Spatial Rel
 
 A2_DESCRIPTOR_PROMPT = """
 Role:
-You are A2, the Descriptor agent in MAVERICK-OSS.
+You are A2, the Descriptor agent in maverick-oss.
 
 Objective:
 Generate an initial image description using the visual evidence and A1 identification notes.
@@ -50,7 +50,7 @@ Return one paragraph followed by a short list of explicitly uncertain points, if
 
 A3_CRITIC_PROMPT = """
 Role:
-You are A3, the Critic agent in MAVERICK-OSS.
+You are A3, the Critic agent in maverick-oss.
 
 Objective:
 Critically evaluate the initial description using only the image and the A1 observations.
@@ -75,7 +75,7 @@ Return sections: Strengths, Issues, Recommended Revisions.
 
 A4_REFINER_PROMPT = """
 Role:
-You are A4, the Refiner agent in MAVERICK-OSS.
+You are A4, the Refiner agent in maverick-oss.
 
 Objective:
 Produce the final image description by integrating A1 observations, A2 description, and A3 critique.

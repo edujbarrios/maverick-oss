@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use MAVERICK-OSS, please cite this software."
-title: "MAVERICK-OSS"
+message: "If you use maverick-oss, please cite this software."
+title: "maverick-oss"
 type: software
 authors:
   - family-names: "Barrios"
@@ -11,4 +11,4 @@ keywords:
   - "multi-agent systems"
   - "vision-language models"
   - "explainable AI"
-abstract: "MAVERICK-OSS is a reference-free multi-agent pipeline for generating and refining image descriptions with Vision-Language Models."
+abstract: "maverick-oss is a reference-free multi-agent pipeline for generating and refining image descriptions with Vision-Language Models."
