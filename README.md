@@ -141,7 +141,7 @@ The interface supports:
 Run the interface with:
 
 ```bash
-streamlit run app.py
+streamlit run maverick-oss.py
 ```
 
 Install dependencies first:
