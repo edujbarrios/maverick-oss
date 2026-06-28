@@ -1,110 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
   <title id="title">maverick-oss reference-free multi-agent workflow</title>
-  <desc id="desc">A clean workflow diagram showing four sequential agents: A1 Identifier, A2 Descriptor, A3 Critic, and A4 Refiner, producing a reference-free final description.</desc>
+  <desc id="desc">A minimal workflow diagram showing A1 Identifier, A2 Descriptor, A3 Critic, and A4 Refiner producing a reference-free final description.</desc>
   <defs>
-    <marker id="arrow" markerWidth="15" markerHeight="15" refX="12" refY="7.5" orient="auto" markerUnits="strokeWidth">
-      <path d="M2,2 L13,7.5 L2,13 Z" fill="#26364f"/>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L12,7 L2,12 Z" fill="#26364f"/>
     </marker>
     <filter id="shadow" x="-8%" y="-10%" width="116%" height="130%">
-      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#17345f" flood-opacity="0.13"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#17345f" flood-opacity="0.12"/>
     </filter>
     <style>
-      .bg { fill: #f7faff; }
-      .title { fill: #17345f; font: 700 32px Arial, Helvetica, sans-serif; text-anchor: middle; }
-      .subtitle { fill: #52627a; font: italic 19px Arial, Helvetica, sans-serif; text-anchor: middle; }
-      .node { fill: #ffffff; stroke: #7aa7ff; stroke-width: 3; filter: url(#shadow); }
-      .node-num { fill: #3568d4; }
-      .num-text { fill: #ffffff; font: 700 22px Arial, Helvetica, sans-serif; text-anchor: middle; dominant-baseline: central; }
-      .node-title { fill: #123f96; font: 700 21px Arial, Helvetica, sans-serif; text-anchor: middle; }
-      .node-role { fill: #26364f; font: 16px Arial, Helvetica, sans-serif; text-anchor: middle; }
-      .icon { fill: none; stroke: #2454b8; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
-      .icon-fill { fill: #edf4ff; stroke: #2454b8; stroke-width: 5; }
+      .bg { fill: #f8fbff; }
+      .title { fill: #17345f; font: 700 34px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .subtitle { fill: #52627a; font: italic 20px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .node { fill: #ffffff; stroke: #78a6ff; stroke-width: 3; filter: url(#shadow); }
+      .number { fill: #3568d4; }
+      .number-text { fill: #ffffff; font: 700 30px Arial, Helvetica, sans-serif; text-anchor: middle; dominant-baseline: central; }
+      .agent { fill: #123f96; font: 700 24px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .stage { fill: #26364f; font: 18px Arial, Helvetica, sans-serif; text-anchor: middle; }
       .arrow { stroke: #26364f; stroke-width: 5; fill: none; marker-end: url(#arrow); }
-      .output-box { fill: #ffffff; stroke: #3568d4; stroke-width: 3; }
-      .output-text { fill: #154aa8; font: 700 20px Arial, Helvetica, sans-serif; text-anchor: middle; }
-      .scope { fill: #6b5617; font: 15px Arial, Helvetica, sans-serif; text-anchor: middle; }
-      .scope-box { fill: #fffdf6; stroke: #c6a24a; stroke-width: 2.2; stroke-dasharray: 9 7; }
-      .caption { fill: #52627a; font: 14px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .output { fill: #ffffff; stroke: #3568d4; stroke-width: 3; filter: url(#shadow); }
+      .output-text { fill: #154aa8; font: 700 22px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .note { fill: #6b5617; font: 16px Arial, Helvetica, sans-serif; text-anchor: middle; }
+      .note-box { fill: #fffdf6; stroke: #c6a24a; stroke-width: 2.4; stroke-dasharray: 10 7; }
     </style>
   </defs>
 
-  <rect class="bg" width="1280" height="420"/>
-  <text class="title" x="640" y="48">maverick-oss Reference-Free Multi-Agent Pipeline</text>
-  <text class="subtitle" x="640" y="78">Identification, description, critique, and refinement</text>
+  <rect class="bg" width="1280" height="360"/>
+  <text class="title" x="640" y="46">maverick-oss Reference-Free Pipeline</text>
+  <text class="subtitle" x="640" y="76">Cognitive-inspired multi-agent refinement of VLM image descriptions</text>
 
-  <g transform="translate(55 118)">
-    <rect class="node" x="0" y="0" width="230" height="170" rx="22"/>
-    <circle class="node-num" cx="34" cy="34" r="20"/>
-    <text class="num-text" x="34" y="34">1</text>
-    <text class="node-title" x="124" y="39">A1 Identifier</text>
-    <g transform="translate(78 62)">
-      <rect class="icon-fill" x="16" y="6" width="72" height="66" rx="18"/>
-      <path class="icon" d="M35 32 h15 M65 32 h15 M52 18 v-8 M52 72 v8 M26 46 h-8 M88 46 h8"/>
-      <path class="icon" d="M33 24 v-8 h14 M72 24 v-8 h-14 M33 65 v8 h14 M72 65 v8 h-14"/>
-    </g>
-    <text class="node-role" x="115" y="146">Visual evidence</text>
+  <g transform="translate(70 120)">
+    <rect class="node" x="0" y="0" width="220" height="120" rx="20"/>
+    <circle class="number" cx="52" cy="60" r="30"/>
+    <text class="number-text" x="52" y="60">1</text>
+    <text class="agent" x="138" y="52">A1</text>
+    <text class="stage" x="138" y="82">Identifier</text>
   </g>
 
-  <path class="arrow" d="M305 203 H360"/>
+  <path class="arrow" d="M310 180 H372"/>
 
-  <g transform="translate(380 118)">
-    <rect class="node" x="0" y="0" width="230" height="170" rx="22"/>
-    <circle class="node-num" cx="34" cy="34" r="20"/>
-    <text class="num-text" x="34" y="34">2</text>
-    <text class="node-title" x="124" y="39">A2 Descriptor</text>
-    <g transform="translate(82 62)">
-      <path class="icon-fill" d="M20 4 H76 L100 28 V88 H20 Z"/>
-      <path class="icon" d="M76 4 V29 H100"/>
-      <path class="icon" d="M42 45 H80 M42 61 H80 M42 77 H80"/>
-    </g>
-    <text class="node-role" x="115" y="146">Initial description</text>
+  <g transform="translate(395 120)">
+    <rect class="node" x="0" y="0" width="220" height="120" rx="20"/>
+    <circle class="number" cx="52" cy="60" r="30"/>
+    <text class="number-text" x="52" y="60">2</text>
+    <text class="agent" x="138" y="52">A2</text>
+    <text class="stage" x="138" y="82">Descriptor</text>
   </g>
 
-  <path class="arrow" d="M630 203 H685"/>
+  <path class="arrow" d="M635 180 H697"/>
 
-  <g transform="translate(705 118)">
-    <rect class="node" x="0" y="0" width="230" height="170" rx="22"/>
-    <circle class="node-num" cx="34" cy="34" r="20"/>
-    <text class="num-text" x="34" y="34">3</text>
-    <text class="node-title" x="124" y="39">A3 Critic</text>
-    <g transform="translate(74 58)">
-      <path class="icon" d="M58 10 L108 96 H8 Z"/>
-      <path class="icon" d="M58 42 V66"/>
-      <circle class="icon-fill" cx="58" cy="82" r="3"/>
-      <circle class="icon-fill" cx="104" cy="84" r="24"/>
-      <path class="icon" d="M121 101 L139 119"/>
-    </g>
-    <text class="node-role" x="115" y="146">Reference-free critique</text>
+  <g transform="translate(720 120)">
+    <rect class="node" x="0" y="0" width="220" height="120" rx="20"/>
+    <circle class="number" cx="52" cy="60" r="30"/>
+    <text class="number-text" x="52" y="60">3</text>
+    <text class="agent" x="138" y="52">A3</text>
+    <text class="stage" x="138" y="82">Critic</text>
   </g>
 
-  <path class="arrow" d="M955 203 H1010"/>
+  <path class="arrow" d="M960 180 H1022"/>
 
-  <g transform="translate(1030 118)">
-    <rect class="node" x="0" y="0" width="230" height="170" rx="22"/>
-    <circle class="node-num" cx="34" cy="34" r="20"/>
-    <text class="num-text" x="34" y="34">4</text>
-    <text class="node-title" x="124" y="39">A4 Refiner</text>
-    <g transform="translate(79 61)">
-      <path class="icon-fill" d="M24 88 H94 V25 L79 10 H24 Z"/>
-      <path class="icon" d="M79 10 V26 H94"/>
-      <path class="icon" d="M57 70 L101 26"/>
-      <path class="icon" d="M95 20 L109 34"/>
-      <path class="icon" d="M51 78 L47 94 L64 90"/>
-    </g>
-    <text class="node-role" x="115" y="146">Final refinement</text>
+  <g transform="translate(1045 120)">
+    <rect class="node" x="0" y="0" width="220" height="120" rx="20"/>
+    <circle class="number" cx="52" cy="60" r="30"/>
+    <text class="number-text" x="52" y="60">4</text>
+    <text class="agent" x="138" y="52">A4</text>
+    <text class="stage" x="138" y="82">Refiner</text>
   </g>
 
-  <path class="arrow" d="M1145 302 V326"/>
-  <g transform="translate(775 320)">
-    <rect class="output-box" x="0" y="0" width="360" height="54" rx="18"/>
-    <text class="output-text" x="180" y="34">Reference-free final description</text>
+  <g transform="translate(365 278)">
+    <rect class="note-box" x="0" y="0" width="260" height="44" rx="14"/>
+    <text class="note" x="130" y="28">No reference comparison</text>
   </g>
 
-  <g transform="translate(95 320)">
-    <rect class="scope-box" x="0" y="0" width="470" height="54" rx="18"/>
-    <text class="scope" x="235" y="23">Open-source scope: no reference comparison</text>
-    <text class="scope" x="235" y="42">and no unpublished evaluation metrics</text>
+  <g transform="translate(655 278)">
+    <rect class="note-box" x="0" y="0" width="285" height="44" rx="14"/>
+    <text class="note" x="142.5" y="28">No unpublished metrics</text>
   </g>
 
-  <text class="caption" x="640" y="405">Figure 1. maverick-oss uses four specialized agents to improve VLM image descriptions in reference-free mode.</text>
+  <path class="arrow" d="M1155 242 V276 H1045"/>
+  <g transform="translate(955 278)">
+    <rect class="output" x="0" y="0" width="290" height="54" rx="16"/>
+    <text class="output-text" x="145" y="34">Final description</text>
+  </g>
 </svg>
