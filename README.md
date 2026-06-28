@@ -45,13 +45,11 @@ The default prompts follow **structured prompting** principles: each prompt defi
 
 Prompt behavior should be treated as experimentally sensitive. VLM outputs can vary with prompt wording, decoding parameters, model family, and visual encoder design. In transformer-based vision systems, image evidence is often represented through patch-level tokens; therefore, patch resolution, visual tokenization, and cross-modal alignment may influence which objects, attributes, colors, and spatial relations are emphasized. maverick-oss keeps agents, prompts, and models configurable because different LLM/VLM backends may show different concept associations, spatial-reasoning limitations, and grounding behavior, as reported in work on concept association bias ([Yamada et al., 2024](https://doi.org/10.48550/arXiv.2212.12043)) and spatial reasoning in vision-language models ([Kamath et al., 2023](https://doi.org/10.18653/v1/2023.emnlp-main.568)).
 
-Prompt modifications should preserve the reference-free constraint. Domain-specific prompts may add terminology or reporting conventions, but they should not introduce reference-description comparison or unpublished evaluation procedures.
-
 ## Execution Mode
 
 This repository supports **reference-free execution only**.
 
-The full MAVERICK research framework includes additional reference-based validation components. Those components, including external text-to-text validation modules and unpublished evaluation metrics such as MSCE, are not included in this public release.
+The full MAVERICK research framework includes additional reference-based validation components. Those components, including external text-to-text validation modules and unpublished evaluation metrics, are not included in this public release.
 
 maverick-oss therefore does not compare generated descriptions against reference descriptions. The public release is limited to the four-agent reference-free pipeline described above.
 
