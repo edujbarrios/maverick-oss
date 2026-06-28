@@ -25,10 +25,6 @@ This design is intended to support transparent reasoning, modular experimentatio
 
 maverick-oss contains exactly four configurable agents:
 
-![maverick-oss reference-free multi-agent workflow](docs/assets/maverick-oss-pipeline.svg)
-
-**Figure 1.** Reference-free workflow used by maverick-oss. A1 identifies visual evidence, A2 generates an initial description, A3 critiques it without reference descriptions, and A4 produces the final refined output.
-
 | Agent | Name | Role |
 | --- | --- | --- |
 | A1 | Identifier | Identifies salient objects, entities, regions, attributes, and uncertainties in the image. |
